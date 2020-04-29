@@ -25,7 +25,6 @@ set noswapfile
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
 set smarttab
 
 set cursorline
@@ -63,16 +62,6 @@ inoremap [      []<Left>
 inoremap [<CR>  [<CR>]<Esc>O
 inoremap [[     [
 inoremap []     []
-
-inoremap '      ''<Left>
-inoremap '<CR>  '<CR>'<Esc>O
-inoremap ''     '
-inoremap ''     ''
-
-inoremap "      ""<Left>
-inoremap "<CR>  "<CR>"<Esc>O
-inoremap ""     "
-inoremap ""     ""
 
 "set guicursor=a:ver30-blinkon800-blinkoff400
 " Workaround some broken plugins which set guicursor indiscriminately.

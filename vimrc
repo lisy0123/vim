@@ -46,6 +46,16 @@ au BufReadPost *
 \ exe "norm g`\"" |
 \ endif
 
+"""
+" Clever Tab features
+"function! CleverTab()
+"	if strpart( getline('.'), 0, col('.')-1 ) =~ ';' || strpart ( getline('.'), 0, col('.')-1 ) =~ '^\s*$' || strpart( getline('.'), 0, col('.')-1 ) =~ ' '
+"        return "\<Tab>"
+"    else
+"        return "\<C-N>"
+"endfunction
+"inoremap <Tab> <C-R>=CleverTab()<CR>
+
 set updatetime=100
 
 "set guicursor=a:ver30-blinkon800-blinkoff400

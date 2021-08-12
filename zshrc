@@ -75,6 +75,7 @@ plugins=(
     fasd
     tmux
     tmuxinator
+	zsh-wakatime
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,3 +124,10 @@ eval "$(pyenv init -)"
 
 alias norminette="~/.norminette/norminette.rb"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="$PATH:/Users/sangeunlee/lisy/flutter/bin"
+
+eval "$(pyenv init -)"
+
+alias cat="bat"
+
+export BAT_THEME="OneHalfDark"

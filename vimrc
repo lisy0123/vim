@@ -77,7 +77,7 @@ map 1 :wq<cr>
 map 2 :w<cr>
 map 3 :q<cr>
 map 4 :q!<cr>
-map 0 :NERDTree<cr>
+map 9 :NERDTree<cr>
 
 "===========================================================================
 "   C compile

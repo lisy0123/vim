@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/sangeunlee/lisy/com/42/Bootcamp_python/d00/ex01'
+let g:netrw_dirhist_2='/Users/sangeunlee/lisy/com/42/Bootcamp_python/d00'
+let g:netrw_dirhist_1='/Users/sangeunlee/lisy/com/42/Bootcamp_python/d00/ex07'

@@ -122,12 +122,24 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-alias norminette="~/.norminette/norminette.rb"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="$PATH:/Users/sangeunlee/lisy/flutter/bin"
 
-eval "$(pyenv init -)"
-
 alias cat="bat"
-
 export BAT_THEME="OneHalfDark"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/sangeunlee/.pyenv/versions/anaconda3-2019.10/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/sangeunlee/.pyenv/versions/anaconda3-2019.10/etc/profile.d/conda.sh" ]; then
+        . "/Users/sangeunlee/.pyenv/versions/anaconda3-2019.10/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/sangeunlee/.pyenv/versions/anaconda3-2019.10/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

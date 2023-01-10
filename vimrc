@@ -1,6 +1,6 @@
-"================================================
+"===========================================================================
 "vimrc
-"=================================================
+"===========================================================================
 
 set wrap
 set mouse=a
@@ -35,6 +35,9 @@ set history=1000
 set noswapfile
 set nobackup
 
+set foldmethod=manual
+set fdc=3
+
 filetype on
 syntax on
 colorscheme onedark
@@ -44,7 +47,7 @@ let g:lightline = {'colorscheme':'wombat'}
 
 au BufReadPost *
 \ if line("'\"") > 0 && line("'\"") <= line("$") |
-\ exe "norm g`\"" |
+\ exe "normal!g`\"" |
 \ endif
 
 """
@@ -95,4 +98,3 @@ au filetype python map 5 :w!<cr>:!python3 %<cr>
 "   Ruby compile
 "===========================================================================
 au filetype ruby map 5 :w!<cr>:!ruby %<cr>
-
